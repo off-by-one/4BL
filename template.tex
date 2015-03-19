@@ -1,0 +1,90 @@
+
+\documentclass[journal]{IEEEtran}
+\usepackage{graphicx}
+\usepackage[scriptsize,labelformat=empty]{caption}
+\renewcommand{\arraystretch}{1.1}
+\begin{document}
+
+% Don't change this portion-- it will format the section below for you.:)
+\newcommand{\labtitlepage}{
+	\onecolumn
+	\thispagestyle{empty} \vspace*{\fill}
+	\begin{center}
+		\LARGE\labtitle \\ \bigskip \bigskip \large\name \\ \bigskip
+		\labsection \\ \bigskip \labdate \\ \bigskip \bigskip
+		\textbf{TA} \\ \taname \\ \bigskip \textbf{Lab Partners} \\
+		\partnername \\
+	\end{center}
+	\vspace*{\fill} \vspace*{\fill} \newpage
+	\setcounter{page}{1}
+	\twocolumn
+}
+
+%% Change these variables
+\newcommand{\labtitle}{Experiment 1: Example}
+\newcommand{\name}{Vladimir Vysotsky}
+\newcommand{\labsection}{Section 2, Wednesday 8AM}
+\newcommand{\labdate}{January 21, 2015}
+\newcommand{\taname}{TA}
+\newcommand{\partnername}{Someone}
+
+
+%% This creates your lab cover page.
+\labtitlepage
+
+
+
+\section{Introduction}
+
+\begin{equation}
+\label{proportions}
+\frac{m_{total}}{L_{total}} = \frac{m_{used}}{L_{used}}
+\end{equation}
+
+\begin{displaymath}
+v = 30.60 \pm 0.0929 m/s
+\end{displaymath} 
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=80mm]{setup.png}
+\caption{Figure 2.1: Apparatus for observing the vibrational motion of a massive string.$^1$}
+\label{setup}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{\normalsize{Length of String Verses Attached Mass}}
+\scalebox{.9}{
+\begin{tabular}{|l|l|l|l|}
+	\hline
+	Hanging Mass (kg)  & Total Length (m)   & Used Length (m)    & Hanging Length (m) \\ \hline
+	0.000 $\pm$ 0.0000        & 2.142 $\pm$ 0.0008 & 1.924 $\pm$ 0.0007 & 0.186 $\pm$ 0.0005 \\ \hline
+	0.100 $\pm$ 0.0005 & 2.151  $\pm$ 0.0009             & 1.924 $\pm$ 0.0007 & 0.195   $\pm$ 0.0005            \\ \hline
+	0.200 $\pm$ 0.0007 & 2.160  $\pm$ 0.0009             & 1.924 $\pm$ 0.0007 & 0.204  $\pm$ 0.0005             \\ \hline
+	0.400 $\pm$ 0.0009 & 2.253 $\pm$ 0.0009              & 1.924 $\pm$ 0.0007 & 0.297   $\pm$ 0.0005           \\ \hline
+	\end{tabular}
+}
+\medskip
+\caption{Table 3.1: Length of the string versus the weight of the attached varying masses.}
+\end{table}
+
+~\ref{sec:greetings}
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+Physics 4AL: Mechanics Lab Manual
+
+   Los Angeles, California: W.C. Campbell, Priscilla Yitong Zhao, Julio S. Rodriguez 2014.
+
+\end{thebibliography}
+
+\end{document}
+
+
